@@ -3,7 +3,7 @@
 // add feature
 // add New
 $hugeCallback = function() {
-    echo 'hello';
+    echo 'hello thanh';
 };
 
 phpinfo();
