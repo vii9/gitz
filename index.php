@@ -6,4 +6,9 @@ $hugeCallback = function() {
     echo 'hello thanh';
 };
 
+function createSomething() {
+
+}
+
+// info from php version
 phpinfo();
