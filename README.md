@@ -1,3 +1,3 @@
 # Git Zet
 
-## git command
+## git command practices
