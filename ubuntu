@@ -1,0 +1,51 @@
+user: login 
+  su - dnthanh    > enter password(12345678)
+
+# add a user
+$ useradd -m -d /PATH/TO/FOLDER USERNAME
+# set pass for user login
+$ passwd username
+
+
+// File & folder
+
+  # phân quyền cho folder|file
+  $ chmod 770 -Rf /path/folder
+
+  # change group của folder|file
+  $ chown :group /path/folder
+    or $ chonw user: path/folder -> change user of folder
+    or $ chgrp groupName path/folder 
+
+// User 
+# add user into group
+$ usermod -a -G staffacc dnthanh
+    $ -> short: usermod -aG groupName nameUser
+# check user dnthanh exists in group ??
+$ id dnthanh
+
+
+// Group
+# check user exists in group
+  1 - from root -> groups username
+  2 - from user -> groups
+  
+  #delete user from group
+  $ gpasswd --delete nameUser groupName
+
+================================
+sudo groupadd tomandruser
+
+sudo usermod -aG tomandruser tomcat6
+sudo usermod -aG tomandruser ruser
+
+sudo chgrp -R tomandruser /path/to/the/directory
+sudo chmod -R 770 /path/to/the/directory
+
+
+list all user:
+  $ cat /etc/passwd
+  # cat /etc/passwd |grep nameUser|idUser  
+  
+  
+  
