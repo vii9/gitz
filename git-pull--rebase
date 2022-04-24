@@ -1,0 +1,26 @@
+## Fetch branch from remote
+$ git fetch origin
+## List branch from remote
+$ git branch -r
+
+## Create 1 br from remote repo
+$ git fetch https://github.com/vii9/opengit.git develop:develop -> remote_br_name:local_br_name
+
+## Checkout 1 branch from remote
+$ git checkout --track -b only_co origin/only_co
+
+## Create br from remote
+$ git fetch origin remote_br_name:local_br_name
+
+## checkout ve 1 commit and create new br from it
+$ git co -b task3 190ca12
+
+// ý nghĩa của checkout file
+    nếu file đã tường được commit mà chúng ta thêm mới nội dung
+    và chưa add vào vùng staging (chưa dùng git add file_name)
+    thì để xoá bỏ hết các thay đổi đó thì dùng lệnh
+$ git checkout tenfile
+
+// nếu file đã được git add thì checkout fileName không được
+$ git reset fileName -> đưa về trạng thái untracking 
+$ git checkout fileName -> xoa cac noi dung da modified
